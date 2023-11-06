@@ -1,0 +1,77 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and set font styles for the body */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+.header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Style the navigation menu */
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+/* Style the icons in the header */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons .fa-bars,
+.icons .fa-user {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Style the account box */
+.account-box {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.account-box p {
+    margin-right: 20px;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Style the main content */
+main {
+    padding: 20px;
+}

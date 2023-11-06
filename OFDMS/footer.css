@@ -1,0 +1,53 @@
+/* Footer styles */
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .box {
+  flex: 1 0 25%;
+  padding: 10px;
+}
+
+.footer .box h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer .box p {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.footer .box a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.footer .box i {
+  margin-right: 5px;
+}
+
+.footer .credit {
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.footer .credit span {
+  font-weight: bold;
+  color: white;
+}
+.box-container .box:hover {
+  transform: scale(1.1);
+}

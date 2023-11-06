@@ -1,0 +1,199 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 29, 2023, 4:16:55 PM
+    Author     : kalth
+*/
+body,
+ul {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li:nth-last-child(-n+2) {
+    border-right: 2px solid white;
+    /* Add a border on the right side of the second-to-last and last items (line add karva) */
+}
+
+.navbar ul li:first-child a:hover {
+    background-color: transparent;
+    /* Set the hover background color to be transparent for the first <a> tag */
+}
+
+li a:hover {
+    background-color: #555;
+}
+
+.active {
+    background-color: #04AA6D;
+
+}
+
+/* Style the pop-up container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    /* Ensure it doesn't exceed the viewport width */
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+/* Style form elements within the pop-up */
+.popup input[type="text"],
+.popup input[type="email"],
+.popup input[type="tel"],
+.popup input[type="password"],
+.popup input[type="checkbox"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Center the form within the pop-up */
+.form-group {
+    text-align: left;
+}
+
+/* Add some space between form groups */
+.form-group+.form-group {
+    margin-top: 10px;
+}
+
+/* Style the "Already have an account?" link */
+.container.signup a,
+.container.login a {
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Style the "Already have an account?" link on hover */
+.container.signup a:hover,
+.container.login a:hover {
+    color: #1e00ff;
+}
+
+/* Style the sign-up container */
+.signup-container {
+    width: 400px;
+    /* Set the width to your desired value */
+    height: 100%;
+    /* Set the height to your desired value */
+    /* overflow-y: auto; Add a vertical scrollbar if content overflows */
+}
+
+/* Style the login container */
+.login-container {
+    width: 400px;
+    /* Set the width to your desired value */
+    height: 300px;
+    /* Set the height to your desired value */
+    /* overflow-y: auto; Add a vertical scrollbar if content overflows */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #555;
+}
+
+/* navar ni pachi */
+.home{
+    min-height: 60vh;
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('photo/pexels-jane-doan-1099680.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+
+.home .content h4{
+    font-size: 4.5rem;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.home .content p{
+    font-size:1.8rem;
+    color:  white;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+/* CSS to add hover effect to the "Order Now" button */
+.order-button {
+    background-color: #3498db; /* Default background color */
+    color: #fff; /* Default text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition for hover effect */
+
+    /* Center the button */
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.order-button:hover {
+    background-color: #ff5722; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}

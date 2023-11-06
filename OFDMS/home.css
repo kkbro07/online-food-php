@@ -1,0 +1,111 @@
+body,
+ul {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+
+}
+/* Style the navigation bar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li:nth-last-child(-n) {
+    border-right: 2px solid white;
+    /* Add a border on the right side of the second-to-last and last items (line add karva) */
+}
+
+.navbar ul li:first-child a:hover {
+    background-color: transparent;
+    /* Set the hover background color to be transparent for the first <a> tag */
+}
+
+li a:hover {
+    background-color: #555;
+}
+
+.active {
+    background-color: #04AA6D;
+
+}
+.add-to-cart {
+    margin-right: 10px;
+}
+
+.fa-shopping-cart {
+    font-size: 20px;
+    color: #000;
+}
+
+
+
+/* navar ni pachi */
+.home{
+    min-height: 60vh;
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('photo/pexels-jane-doan-1099680.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+
+.home .content h4{
+    font-size: 4.5rem;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.home .content p{
+    font-size:1.8rem;
+    color:  white;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+/* CSS to add hover effect to the "Order Now" button */
+.order-button {
+    background-color: #3498db; /* Default background color */
+    color: #fff; /* Default text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition for hover effect */
+
+    /* Center the button */
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.order-button:hover {
+    background-color: #ff5722; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
